@@ -1,0 +1,47 @@
+ <!doctype html>
+<html ng-app="TimeWaste">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="app/css/bootstrap.css">
+        <link rel="stylesheet" href="app/css/main.css">
+        <title>Untitled</title>
+    </head>
+    <nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
+        <div class="container">
+            <div ng-show="!loggedIn">
+                Email: <input type="text" ng-model="login.email">
+                Password: <input type="password" ng-model="login.password">
+                <button class="btn btn-default" ng-click="logUserIn()">Log in</button>
+                <a class="btn btn-default" ui-sref="signUp">Create an Account</a>
+            </div>
+            <div ng-show="loggedIn">
+                <a class="btn btn-default" ui-sref="editProfile">Edit Profile</a>
+                <a class="btn btn-default" ui-sref="main">View/Create Wastes</a>
+                <a class="btn btn-default" ui-sref="follow">Follow Users</a>
+                <a class="btn btn-default" ng-click="logOut()">Logout</a>
+            </div>
+        </div>        
+    </nav>
+    <body>
+        <div ui-view>
+            
+        </div>
+    </body>
+    <!-- angular and libraries -->
+    <script src="app/js/angular.min.js"></script>
+    <script src="app/js/ng-file-upload.js"></script>
+    <script src="app/js/ng-file-upload-all.js"></script>
+    <script src="app/js/ng-file-upload-shim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <!-- main app module -->
+    <script src="app/app.js"></script>
+
+    <!-- controllers -->
+    <script src="app/signup/signup-controller.js"></script>
+    <script src="app/navigation/navigation-controller.js"></script>
+    <script src="app/profile/edit-profile-controller.js"></script>
+    <script src="app/main/main-controller.js"></script>
+    <script src="app/follow/follow-controller.js"></script>
+</html>
