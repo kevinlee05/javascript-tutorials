@@ -1,0 +1,51 @@
+<template name="editplan">
+	<h1>Edit Plan</h1>
+	<form action="" class="edit-plan-form">
+		<div class="row">
+			<div class="twelve columns">
+				<label for="plan_name">Plan Name</label>
+				<input type="text" class="u-full-width" placeholder="" 
+				name="plan_name" id="plan_name" value="{{plan_name}}">
+			</div>			
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="plan_label">Plan Label</label>
+				<input type="text" class="u-full-width" placeholder="Plan Label (all lower case)" 
+				name="plan_label" id="plan_label" value="{{plan_label}}">
+			</div>
+		</div>		
+		<div class="row">
+			<div class="twelve columns">
+				<label for="days">Days (Duration)</label>
+				<input type="text" class="u-full-width" placeholder="Days" 
+				name="days" id="days" value="{{days}}">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="price">Price</label>
+				<input type="text" class="u-full-width" placeholder="price" 
+				name="price" id="price" value="{{price}}">
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="description">Description</label>
+				<textarea type="textarea" class="u-full-width" placeholder="description" 
+				name="description" id="description" value="{{description}}"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<label for="">Default Plan</label>
+				<select name="is_default" id="is_default" class="u-full-width">
+					<option value="0" {{checkValue 0 is_default}}>No</option>
+					<option value="1" {{checkValue 1 is_default}}>Yes</option>
+				</select>
+			</div>
+		</div>
+		<input type="submit" value="submit" class="button-primary">
+	</form>
+
+</template>

@@ -1,0 +1,13 @@
+body {
+	padding: 20px;
+}
+
+.show-image {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: solid grey;
+}
+
+img{
+	max-width: 100%;
+}

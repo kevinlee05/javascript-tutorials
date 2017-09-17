@@ -1,0 +1,25 @@
+<template name="addInfo">
+	<div class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Add Photo</h4>
+				</div>
+				<div class="modal-body">
+					<form class="add-image-info">
+						<div class="form-group">
+							<label>Title</label>
+							<input type="text" id="name" name="title" class="form-control" placeholder="title">
+						</div>
+						<div class="form-group">
+							<label>Story</label>
+							<textarea name="story" id="story" cols="30" rows="10" class="form-control"></textarea>
+						</div>
+						<button class="btn btn-primary" type="submit">Submit</button>
+						<button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

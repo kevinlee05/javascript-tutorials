@@ -1,0 +1,13 @@
+<template name="image">
+	<div class="row show-image">
+		<div class="col-sm-12">
+			<img src="{{url}}" alt="">
+			{{#if isOwn _id}}
+			<a href="" class="remove-image">
+				<i class="glyphicon glyphicon-remove"></i>
+			</a>
+			{{/if}}			
+		</div>
+	</div>
+	
+</template>

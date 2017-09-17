@@ -1,0 +1,11 @@
+.panel-register {
+	display: none;	
+}
+
+.reply-customer, .reply-staff {
+	padding: 5px;
+}
+
+.reply-customer{
+	background: ##f4f4f4;
+}

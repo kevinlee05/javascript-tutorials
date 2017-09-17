@@ -1,0 +1,59 @@
+<template name="login">
+	{{#if currentUser}}
+	<div class="panel panel-default panel-login">
+		<div class="panel-heading">
+			<h3 class="panel-title">Welcome Back</h3>
+		</div>
+		<div class="panel-body">
+			{{userEmail}}
+			<hr>
+			<form action="" class="logout-form">
+				<button type="submit" class="btn btn-primary">Logout</button>
+			</form>
+		</div>
+	</div>	
+	{{else}}
+	<div class="panel panel-default panel-login">
+		<div class="panel-heading">
+			<div class="panel-title">Customer Login</div>
+		</div>	
+		<div class="panel-body">
+			<form action="" class="login-form">
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="Email Address" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" placeholder="password" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Log In</button>
+				<a href="#" class="register-link">Register</a>
+			</form>
+		</div>
+	</div>	
+	<div class="panel panel-default panel-register">
+		<div class="panel-heading">
+			<div class="panel-title">Customer Register</div>
+		</div>	
+		<div class="panel-body">
+			<form action="" class="register-form">
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="Email Address" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" placeholder="password" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password2">Confirm Password</label>
+					<input type="password" id="password2" name="password2" placeholder="confirm password" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Register</button>
+				<a href="#" class="login-link">Log In</a>
+			</form>
+		</div>
+	</div>
+	{{/if}}
+</template>

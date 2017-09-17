@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+	<title>angular spreadsheet</title>
+	</head>
+<body>
+
+  <div ng-app="myApp" ng-controller="sheetCtrl">
+		<h3>angular spreadsheet</h3>
+    <table>
+      <tr class="column-label">
+				<td></td>
+				<td ng-repeat="column in columns">{{column}}</td>
+			</tr>
+      <tr ng-repeat="row in rows">
+				<td class="row-label">{{row}}</td>
+        <td ng-repeat="column in columns">
+          <div>
+						<input ng-model="cells[column+row]"></input>
+    		<div ng-bind="compute(column+row)" class="output">
+					</div>
+			</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+
+</body>
+</html>

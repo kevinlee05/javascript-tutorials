@@ -1,0 +1,24 @@
+{>"layouts/manage"/}
+
+{<body}
+	<div class="row">
+		<div class="medium-12 columns">
+			<h2>Edit Category</h2>
+			<form action="/manage/categories/edit/{category._id}" method="post">
+				<div class="row">
+					<div class="medium-12 colummns">
+						<label for="">Name</label>
+						<input type="text" name="name" value="{category.name}">
+					</div>
+				</div>
+				<div class="row">
+					<div class="medium-12 columns">
+						<input type="submit" value="submit" class="button">
+					</div>
+				</div>
+				<input type="hidden" name="_csrf" value="{_csrf}">
+			</form>
+		</div>	
+
+	</div>
+{/body}
