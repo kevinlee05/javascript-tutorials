@@ -1,0 +1,31 @@
+.rating-control {
+    margin-top: 8px;
+}
+
+/*input.ng-pristine {
+	background-color: yellow;
+}
+*/
+/*
+input.ng-dirty {
+	background-color: none;
+}
+*/
+
+input.ng-valid.ng-touched {
+	border: 3px solid blue;
+}
+
+input.ng-invalid.ng-touched {
+	border: 3px solid red;
+	background-color: yellow;
+}
+
+.form-group .help-block {
+	display: none;
+}
+
+.form-group.has-error .help-block {
+	display: block;
+	
+}

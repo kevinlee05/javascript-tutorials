@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="angularFormsApp">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular Forms</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <!-- Angular Modules -->
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>
+        <!-- Main Angular modules -->
+        <script src="app/AngularFormsApp.js"></script>
+        <script src="app/HomeController.js"></script>
+        <script src="app/DataService.js"></script>
+        <script src="app/ValidationDirective.js"></script>
+        <!-- Employee controllers -->
+        <script src="app/EmployeeForm/efController.js"></script>
+        <script src="app/EmployeeForm/efModalController.js"></script>
+        <script src="app/EmployeeForm/efDirective.js"></script>        
+    </head>
+    <body class="container">
+        <div ng-view>
+        </div>
+    </body>
+</html>
